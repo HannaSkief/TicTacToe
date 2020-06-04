@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="276.0" prefWidth="548.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictacclient.WhoIsFirstController">
+   <children>
+      <HBox alignment="CENTER" layoutX="152.0" prefHeight="48.0" prefWidth="548.0" style="-fx-background-color: #A10F0F;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Who is first ??" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox fx:id="btnHB" layoutX="86.0" layoutY="78.0" spacing="10.0">
+         <children>
+            <JFXButton fx:id="Rbtn" alignment="CENTER" contentDisplay="TOP" onAction="#pressRock" prefHeight="128.0" prefWidth="122.0" ripplerFill="WHITE" style="-fx-background-color: #ffffff;" text="Rock">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/rock.PNG" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="Pbtn" alignment="CENTER" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" onAction="#pressPaper" prefHeight="128.0" prefWidth="121.0" ripplerFill="WHITE" style="-fx-background-color: #ffffff;" text="Paper">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/paper.PNG" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="Sbtn" alignment="CENTER" contentDisplay="TOP" layoutX="129.0" layoutY="10.0" onAction="#pressCizer" ripplerFill="WHITE" style="-fx-background-color: #ffffff;" text="Scissors">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/sce.PNG" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+      <ImageView fx:id="waitImg" fitHeight="50.0" fitWidth="50.0" layoutX="260.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0">
+         <image>
+            <Image url="@../Image/Spinner-1s-200px.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="Oops" text="Oops !! try again.." AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="225.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
